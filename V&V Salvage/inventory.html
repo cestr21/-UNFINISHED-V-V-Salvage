@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory</title>
+    <link rel="stylesheet" href="inventory.css">
+</head>
+<body>
+  <!-- Main Navigation -->
+  <nav>
+    <div class="logo">
+      <a href="index.html">
+        <img src="path/to/your-logo.png" alt="V&V Salvage Logo">
+      </a>
+    </div>
+    <div class="search-container">
+      <input type="text" id="navbar-search" placeholder="What are you looking for?" aria-label="Search">
+    </div>
+    <button class="menu-toggle" aria-label="Toggle menu">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html" aria-current="page">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="inventory.html">Inventory</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="call-us-container">
+      <a href="tel:+1234567890" class="call-us-button" aria-label="Call Us">Call Us</a>
+    </div>
+    <!-- Mobile Menu -->
+    <div class="full-page-menu">
+      <button class="close-menu" aria-label="Close menu">&times;</button>
+      <ul class="mobile-nav-links">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="inventory.html">Inventory</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="mobile-call-us-container">
+          <a href="tel:+1234567890" class="mobile-call-us-button" aria-label="Call Us">Call Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+    <main>
+        <header>
+            <h1>Inventory</h1>
+        </header>
+
+        <div class="category-buttons">
+            <button class="category-btn" data-category="all">All</button>
+            <button class="category-btn" data-category="cars">Cars</button>
+            <button class="category-btn" data-category="parts">Car Parts</button>
+        </div>
+
+        <div class="subcategory-buttons" id="subcategory-buttons">
+            <button class="subcategory-btn" data-category="suspension">Suspension</button>
+            <button class="subcategory-btn" data-category="brakes">Brakes</button>
+            <button class="subcategory-btn" data-category="exhaust">Exhaust</button>
+            <button class="subcategory-btn" data-category="air-intake">Air Intake</button>
+            <button class="subcategory-btn" data-category="ac-heating">A/C & Heating</button>
+            <button class="subcategory-btn" data-category="driveline-axles">Driveline & Axles</button>
+            <button class="subcategory-btn" data-category="engine-cooling">Engine Cooling</button>
+            <button class="subcategory-btn" data-category="steering">Steering</button>
+            <button class="subcategory-btn" data-category="fuel-delivery">Fuel Delivery</button>
+            <button class="subcategory-btn" data-category="transmission">Transmission</button>
+            <button class="subcategory-btn" data-category="ignition">Ignition</button>
+            <button class="subcategory-btn" data-category="starting-charging">Starting & Charging</button>
+            <button class="subcategory-btn" data-category="emission-control">Emission Control</button>
+            <button class="subcategory-btn" data-category="electrical">Electrical</button>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" id="main-search" placeholder="Search inventory...">
+        </div>
+        <div class="filter-section">
+            <label for="price-range">Price Range:</label> 
+            <input type="number" id="min-price" placeholder="Min Price">
+            <input type="number" id="max-price" placeholder="Max Price">
+            <label for="sort-order">Sort by:</label>
+            <select id="sort-order">
+                <option value="newest">Newest Added</option>
+                <option value="oldest">Oldest Added</option>
+            </select>
+            <label for="year">Year:</label>
+            <input type="number" id="year" placeholder="Year">
+            <button id="filter-btn">Filter</button>
+            <button id="clear-btn">Clear</button> 
+        </div>
+        
+        <div class="featured-items">
+            <h2>Featured Items</h2>
+            <div class="inventory-list" id="featured-items-list">
+                <!-- Featured items will be injected here -->
+            </div>
+        </div>
+
+        <div class="stock-items">
+            <h2>Our Stock</h2>
+        <div class="inventory-list" id="inventory-list">
+        
+            <!-- Inventory items will be injected here -->
+        </div>
+        </div>
+        </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2024 V&V. All rights reserved.</p>
+        <li class="footer-nav" aria-label="Footer navigation">
+          <a href="index.html" class="footer-link">Home</a>
+          <a href="about.html" class="footer-link">About</a>
+          <a href="contact.html" class="footer-link">Contact</a>
+        </li>
+      </div>
+    </footer>
+  
+
+    <script src="inventory.js"></script>
+</body>
+</html>

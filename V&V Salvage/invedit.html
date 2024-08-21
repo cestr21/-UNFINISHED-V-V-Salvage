@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inventory Edit</title>
+  <link rel="stylesheet" href="invedit.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">V&V Salvage</div>
+    <div id="menu-toggle" class="menu-toggle">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <ul id="nav-links" class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="inventory.html">Inventory</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="inventory-edit-wrapper">
+    <div class="inventory-edit-container">
+        <h1>Add Inventory Item</h1>
+        <form id="inventory-form">
+            <label for="item-name">Item Name:</label>
+            <input type="text" id="item-name" name="item-name" required>
+
+            <label for="item-price">Price:</label>
+            <input type="number" id="item-price" name="item-price" step="0.01" required>
+
+            <label for="item-category">Category:</label>
+            <select id="item-category" name="item-category" required>
+                <option value="cars">Cars</option>
+                <option value="parts">Car Parts</option>
+            </select>
+            <label for="item-subcategory">Subcategory:</label>
+            <select id="item-subcategory" name="item-subcategory" required>
+                <option value="suspension">Suspension</option>
+                <option value="brakes">Brakes</option>
+                <option value="exhaust">Exhaust</option>
+                <option value="air-intake">Air Intake</option>
+                <option value="ac-heating">A/C & Heating</option>
+                <option value="driveline-axis">Driveline & Axis</option>
+                <option value="engine-cooling">Engine Cooling</option>
+                <option value="steering">Steering</option>
+                <option value="fuel-delivery">Fuel Delivery</option>
+                <option value="transmission">Transmission</option>
+                <option value="ignition">Ignition</option>
+                <option value="starting-charging">Starting & Charging</option>
+                <option value="emission-control">Emission Control</option>
+                <option value="electrical">Electrical</option>
+            </select>
+            
+
+            <label for="item-featured">Featured:</label>
+            <input type="checkbox" id="item-featured" name="item-featured">
+
+            <div id="car-details" class="item-details">
+                <h2>Car Details</h2>
+                <label for="car-make">Make:</label>
+                <input type="text" id="car-make" name="car-make">
+
+                <label for="car-model">Model:</label>
+                <input type="text" id="car-model" name="car-model">
+
+                <label for="car-year">Year:</label>
+                <input type="number" id="car-year" name="car-year">
+
+                <label for="car-color">Color:</label>
+                <input type="text" id="car-color" name="car-color">
+            </div>
+
+            <div id="part-details" class="item-details">
+                <h2>Part Details</h2>
+                <label for="part-make">Make:</label>
+                <input type="text" id="part-make" name="part-make">
+
+                <label for="part-model">Model:</label>
+                <input type="text" id="part-model" name="part-model">
+
+                <label for="part-year">Year:</label>
+                <input type="number" id="part-year" name="part-year">
+
+                <label for="part-type">Part Type:</label>
+                <input type="text" id="part-type" name="part-type">
+            </div>
+            <label for="car-details-text">More Details:</label>
+            <textarea id="car-details-text" name="car-details-text"></textarea>
+
+            <label for="item-image">Image:</label>
+            <input type="file" id="item-image" name="item-image" accept="image/*" required>
+
+            <button type="submit">Add Item</button>
+            <p id="error-message"></p>
+        </form>
+    </div>
+  </div>
+
+  <div id="current-inventory">
+    <h1>Current Inventory</h1>
+    <div id="current-inventory-list"></div>
+  </div>
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Your Company. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a> |
+        <a href="about.html">About</a> |
+        <a href="contact.html">Contact</a>
+      </div>
+    </footer>
+
+  <script src="invedit.js"></script>
+</body>
+</html>

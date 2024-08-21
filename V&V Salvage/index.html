@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inventory Management</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Main Navigation -->
+  <nav>
+    <div class="logo">
+      <a href="index.html">
+        <img src="path/to/your-logo.png" alt="V&V Salvage Logo">
+      </a>
+    </div>
+    <div class="search-container">
+      <input type="text" id="navbar-search" placeholder="What are you looking for?" aria-label="Search">
+    </div>
+    <button class="menu-toggle" aria-label="Toggle menu">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html" aria-current="page">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="inventory.html">Inventory</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="call-us-container">
+      <a href="tel:+1234567890" class="call-us-button" aria-label="Call Us">Call Us</a>
+    </div>
+    <!-- Mobile Menu -->
+    <div class="full-page-menu">
+      <button class="close-menu" aria-label="Close menu">&times;</button>
+      <ul class="mobile-nav-links">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="inventory.html">Inventory</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="mobile-call-us-container">
+          <a href="tel:+1234567890" class="mobile-call-us-button" aria-label="Call Us">Call Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Intro Section -->
+  <section id="intro" aria-labelledby="intro-heading">
+    <h1 id="intro-heading">V&V Salvage</h1>
+    <p>We are a locally owned business based in Amarillo, Texas. We specialize in buying junk cars and gladly accept donated vehicles, offering a convenient and reliable service to our community.</p>
+    <a href="inventory.html" class="find-parts-button">Find Parts</a>
+  </section>
+  
+
+  <!-- Confidence Section -->
+  <section class="confidence-section" aria-labelledby="confidence-heading">
+    <h2 id="confidence-heading">Trust Your Purchase</h2>
+    <div class="confidence-content">
+      <p>At V&V Salvage, we're dedicated to helping you find the right parts quickly and efficiently, offering a vast inventory at competitive prices.</p>
+      <p>When you need replacement parts, don’t pay more than you have to.</p>
+    </div>
+    <div class="confidence-cards">
+      <div class="card">
+        <img src="parts-image.jpg" alt="High-quality used auto parts">
+        <div class="card-content">
+          <h3>Parts</h3>
+          <p>QUALITY USED AUTO PARTS</p>
+          <a href="parts.html" class="conf-button">SHOP</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="contact-image.jpg" alt="Get in touch with us">
+        <div class="card-content">
+          <h3>Contact</h3>
+          <p>GET IN TOUCH WITH US</p>
+          <a href="contact.html" class="conf-button">CONTACT US</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="visit-image.jpg" alt="Come visit us">
+        <div class="card-content">
+          <h3>Visit</h3>
+          <p>COME SEE US TODAY</p>
+          <a href="location.html" class="conf-button">Location</a>
+        </div>
+      </div>
+    </div>
+    <div class="confidence-logos" aria-label="Certifications and affiliations">
+      <img src="urg-logo.png" alt="URG Logo">
+      <img src="recycler-logo.png" alt="Recycler Logo">
+      <img src="certified-logo.png" alt="Certified Logo">
+      <img src="bbb-logo.png" alt="BBB Logo">
+    </div>
+  </section>
+
+  <!-- Preview Section -->
+  <section id="preview" aria-labelledby="preview-heading">
+    <h2 id="preview-heading">Serving Amarillo with Pride</h2>
+    <p>As a locally owned Amarillo business, V&V Salvage is committed to serving our community with personalized, reliable service. Whether selling a junk car or donating a vehicle, we make the process easy and rewarding, with a focus on quality and customer satisfaction.</p>
+    <div class="inventory-images">
+      <img src="image1.jpg" alt="High-quality auto parts available">
+      <img src="image2.jpg" alt="Range of auto parts">
+      <img src="image3.jpg" alt="Featured auto parts">
+    </div>
+  </section>
+
+  <!-- Location Section -->
+  <section class="location-section" aria-labelledby="location-heading">
+    <h2 id="location-heading">Our Location</h2>
+    <div class="location-content">
+      <p>7308 E Amarillo Blvd, Amarillo, TX 79107</p>
+      <p>Hours: Monday-Saturday 10 AM - 6 PM</p>
+    </div>
+    <div class="location-map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.7597856609497!2d-101.78560542480427!3d35.21415041607321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87014c44a36dc3c7%3A0x2953d042b1c1060d!2s7308%20E%20Amarillo%20Blvd%2C%20Amarillo%2C%20TX%2079107%2C%20USA!5e0!3m2!1sen!2sus!4v1691790613520!5m2!1sen!2sus"
+        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- Information Section -->
+  <section id="information" aria-labelledby="information-heading">
+    <h2 id="information-heading">Customer Service with a Personal Touch</h2>
+    <p>At V&V Salvage, exceptional customer service is our priority. We offer personalized, bilingual support to ensure every client feels valued and understood. Your satisfaction is our mission.</p>
+    <img class="info-image" src="info.jpg" alt="Customer service representative assisting a client">
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2024 V&V. All rights reserved.</p>
+      <li class="footer-nav" aria-label="Footer navigation">
+        <a href="index.html" class="footer-link">Home</a>
+        <a href="about.html" class="footer-link">About</a>
+        <a href="contact.html" class="footer-link">Contact</a>
+      </li>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
